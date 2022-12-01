@@ -3,6 +3,7 @@ import { AddCategory, GifGird } from './components';
 
 export const GifExpertApp = () => {
     const [categories, setcategories] = useState(['Shakira']);
+    
     const onAddCategory = ( NewCategory ) => {
         if (categories.includes(NewCategory)) return;
         setcategories([NewCategory,...categories])
